@@ -1,0 +1,147 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Fondo de pantalla */
+#Fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el fondo detrás de los demás elementos */
+}
+
+/* Contenedor principal */
+.registro-container {
+  max-width: 400px;
+  margin: auto;
+  background-color: #1f20228a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  color: #fff;
+}
+
+/* Encabezado */
+.registro-container h2 {
+  text-align: center;
+}
+
+/* Imagen pequeña junto al encabezado */
+.imagen-pequeña {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block; /* Asegura que la imagen sea un elemento de bloque */
+  margin-left: auto;
+  margin-right: auto;
+}
+.imagen-pequeña:hover {
+  transform: scale(1.4);
+
+}
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px;
+  background-color: #3b66aa;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+button:hover {
+  background-color: #3546df75;
+  color: #ffffff;
+}
+
+/* Línea de separación */
+.or-line {
+  width: 100%;
+  height: 1px;
+  background-color: #8d8a8a;
+  margin: 10px 0;
+}
+/* Icono de Google */
+.google-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px; /* Ajusta según sea necesario */
+  background-color: #ffffff; /* Nuevo color de fondo al pasar el mouse */
+  border-radius: 16px;
+}
+
+.facebook-icon {
+  width: 35px;
+  height: auto;
+  margin-right: 10px; /* Ajusta según sea necesario */
+  background-color: #ffffff; /* Nuevo color de fondo al pasar el mouse */
+  border-radius: 16px;
+}
+
+/* Botón de Google */
+.google-login-button {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 45px;
+  background-color: #fffffff5; /* Color de fondo original */
+  color: #131212; /* Color del texto original */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.google-login-button:hover {
+  background-color: #8a0e1eb7; /* Nuevo color de fondo al pasar el mouse */
+  color: #ffffff88; /* Nuevo color del texto al pasar el mouse */
+}
+
+/* Botón de Facebook */
+.facebook-login-button2 {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 45px;
+  background-color: #fffffff5; /* Color de fondo original */
+  color: #050505; /* Color del texto original */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.facebook-login-button2:hover {
+  background-color: #2b5dc9ab; /* Nuevo color de fondo al pasar el mouse */
+  color: #ffffff60; /* Nuevo color del texto al pasar el mouse */
+}
+.or-line {
+  border-top: 1px solid #6e70709c; /* Color azul, puedes cambiarlo según tus necesidades */
+  position: relative;
+}

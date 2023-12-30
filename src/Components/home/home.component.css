@@ -1,0 +1,353 @@
+/* Estilos generales del body */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333333b6;
+
+}
+
+/* Estilos del header */
+header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+
+
+}
+
+/* Estilos del h1 y h2 */
+
+
+h1 {
+  margin-top: 8px;
+  margin-left: 38%;
+  background-color: rgba(239, 238, 243, 0.692);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(92, 164, 212);
+}
+
+h2 {
+  color: #3498db;
+  max-width: 800px;
+  padding: 10px;
+  margin-top: 8px;
+  margin-left: 20%;
+
+  border-radius: 8px;
+
+}
+
+/* Estilos del sucom */
+#sucom {
+  color: #101111ea;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* Estilos de la sección y h3 */
+section,
+h3 {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 14px;
+  margin-left: 20%;
+  color: #3498db;
+  background-color: rgba(239, 238, 243, 0.459);
+}
+
+section {
+  padding: 40px 20px;
+  background-color: rgba(239, 238, 243, 0.719);
+  margin-bottom: 20px;
+}
+
+
+
+/* Estilos del párrafo */
+p {
+  line-height: 1.6;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #2c3e50a2;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(142, 145, 143, 0.822);
+}
+
+/* Estilos de los enlaces */
+a {
+  color: #3498db;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #2076b5;
+}
+
+/* Estilos de la imagen masCampoLogo */
+img#mas {
+  margin-top: 8px;
+  border-radius: 50%;
+  width: 80px;
+  height: auto;
+  margin-left: 20px;
+}
+
+/* Estilos del fondo */
+#Fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+
+/* Estilos del sucom en "nuevo" */
+#sucom {
+  font-size: 16px;
+}
+
+/* Estilos de la lista ordenada */
+ol {
+  margin-top: 14px;
+  margin-left: 20%;
+  color: #2f3438;
+  background-color: rgba(239, 238, 243, 0.692);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(116, 122, 118);
+  max-width: 800px;
+}
+
+/* Estilos del texto */
+.text {
+  margin-top: 30px;
+  color: #fff;
+}
+
+/* Estilos específicos del segundo body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #9db385;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilos para el encabezado principal */
+header {
+  background-color: #34badb93;
+  color: #ffffff;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilos para el ícono "más" en el encabezado */
+#mas {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+#mas:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos para el formulario de búsqueda */
+form {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilos para el campo de texto de búsqueda */
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #72bd409c;
+  border-radius: 8px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+input:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para el ícono del carrito de compras */
+img.carrito {
+  margin-left: 12px;
+  width: 70px;
+  cursor: pointer;
+}
+
+img.carrito:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos para el ícono de la lupa de búsqueda */
+img.lupa {
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+img.lupa:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos para el botón */
+button {
+  background-color: rgba(77, 209, 73, 0.425);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: 2px solid #72bd409c;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(104, 150, 30, 0.706);
+  border: 2px solid #5b83119c;
+}
+
+/* Estilos para el menú desplegable */
+nav {
+  background-color: #45b6b069;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+
+  margin-right: 20px;
+  position: relative;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: #acc9e4;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 150px;
+}
+
+.dropdown:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown a {
+  color: #0d2fa0ab;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #e5e8e96e;
+  color: #3abd8bdc;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  form {
+    margin-left: 0;
+  }
+}
+
+/* Estilos para el contenedor */
+.cont {
+  margin-top: 14px;
+  background-color: rgba(102, 202, 241, 0.425);
+  border-radius: 18px;
+  padding: 10px;
+  display: inline-block;
+}
+/* Estilo para el botón Sign Out */
+#signOutButton {
+  background-color: rgba(160, 29, 29, 0.781); /* Cambia el color de fondo a rojo */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: 2px solid #922a2a; /* Cambia el color del borde a rojo */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#signOutButton:hover {
+  background-color: #b85310c5; /* Cambia el color de fondo al pasar el ratón por encima */
+  border: 2px solid #e1e4238c; /* Cambia el color del borde al pasar el ratón por encima */
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+  /* Estilos adicionales para apariencia y tamaño de la ventana */
+
+
+  .user-info {
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .user-photo {
+    border-radius: 50%;
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+    /* Adjust other styles for the photo container as needed */
+  }
+
+  .user-name {
+    color: #e9eee7f6;
+    margin: 3px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Arial;
+    /* Adjust other styles for the name as needed */
+  }

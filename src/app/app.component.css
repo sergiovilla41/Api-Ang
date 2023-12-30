@@ -1,0 +1,24 @@
+
+.cart{
+  display: none;
+
+}
+.show{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  background-color: azure;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(85, 190, 197);
+  right: 0px;
+  top: 83px;
+  min-width: 40%;
+  app-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,21 @@
+
+<body>
+  <app-home></app-home>
+  <img id="Fondo" src="assets/Fondo.jpg" alt="Fondo">
+
+  <header>
+    <h1>Store <img id="tienda" src="assets/Store.png" alt=""></h1>
+  </header>
+
+  <!-- clothes.component.html -->
+  <section>
+    <div class="product" *ngFor="let product of productsByCategory$ | async">
+      <img [src]="product.image" alt="{{ product.title }}">
+      <h2>{{ product.title }}</h2>
+      <p class="price">Precio: ${{ product.price }}</p>
+      <button (click)="addToCart(product)">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+  </section>
+
+</body>
+
