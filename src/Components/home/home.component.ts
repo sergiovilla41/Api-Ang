@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthGoogleService } from '../../Services/authgoogle.service';
 import { AppComponent } from '../../app/app.component';
+import { ProductService } from '../../Services/merch.service';
 
 
 
@@ -23,11 +24,18 @@ export class HomeComponent implements OnInit {
     private authService: SocialAuthService,
     private ruter: Router,
     private authGoogleService: AuthGoogleService,
-    private app: AppComponent
+    private app: AppComponent,
+    private productService: ProductService
 
   ){}
   cart(){
     this.app.onToggleCart();
+  }
+  totalQuantity(): number {
+    return this.productService.totalQuantity();
+  }
+  shouldShowTotalQuantity(): boolean {
+    return this.totalQuantity() > 0;
   }
 
   ngOnInit(): void {

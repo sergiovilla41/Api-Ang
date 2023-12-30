@@ -351,3 +351,13 @@ li {
     font-family: Arial;
     /* Adjust other styles for the name as needed */
   }
+  .total-quantity-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1cac21a1; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 8px 16px; /* Ajusta el relleno según sea necesario */
+    border-radius: 30px; /* Borde redondeado */
+
+  }

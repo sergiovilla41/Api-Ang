@@ -6,6 +6,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { LoginComponent } from '../login/login.component';
 import { MatDialog } from '@angular/material/dialog';
 import { AppComponent } from '../../app/app.component';
+import { ProductService } from '../../Services/merch.service';
 
 
 declare var $: any;
@@ -24,6 +25,7 @@ export class HomeComponent implements OnInit {
     private router: Router,
     private dialog: MatDialog,
     private app: AppComponent,
+    private productService: ProductService,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
@@ -33,7 +35,9 @@ export class HomeComponent implements OnInit {
       this.isLogged = !!user;
     });
   }
-
+  totalQuantity(): number {
+    return this.productService.totalQuantity();
+  }
   openLoginPopup(): void {
     if (isPlatformBrowser(this.platformId)) {
       const loginPopup = window.open(

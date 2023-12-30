@@ -83,4 +83,8 @@ myCart$ = this.myCart.asObservable();
     const total = this.myList.reduce(function (acc, product) { return acc + (product.cantidad * product.price); }, 0)
     return total
   }
+  totalQuantity(): number {
+    const total = this.myList.reduce((acc, product) => acc + product.cantidad, 0);
+    return total;
+  }
 }
