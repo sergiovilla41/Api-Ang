@@ -348,16 +348,25 @@ li {
     margin: 3px;
     padding: 10px;
     font-size: 14px;
-    font-family: Arial;
+    font-family: 'Segoe UI';
     /* Adjust other styles for the name as needed */
   }
   .total-quantity-container {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #1cac21a1; /* Fondo verde */
+    background-color: #50c05473; /* Fondo verde */
     color: white; /* Texto blanco */
-    padding: 8px 16px; /* Ajusta el relleno según sea necesario */
+    padding: 4px 12px; /* Ajusta el relleno según sea necesario */
     border-radius: 30px; /* Borde redondeado */
+    border: 1px solid #2da84cec;
+    font-family: 'Segoe UI';
 
+  }
+  .cart-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 15px; /* Ajusta el margen según sea necesario */
+    /* Otros estilos según sea necesario */
   }

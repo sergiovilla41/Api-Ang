@@ -25,16 +25,14 @@
       </button>
     </a>
 
-    <a (click)="cart()">
-      <img class="carrito" src="assets/Cart.png" alt="Carrito de compras">
-    </a>
-    <!-- cart.component.html -->
-
-<p *ngIf="shouldShowTotalQuantity()" class="total-quantity-container">{{ totalQuantity() }}</p>
-
 
    <img class="user-photo" *ngIf="isLogged" src="{{userlogged.photoUrl}}">
     <h2 class="user-name" *ngIf="isLogged">{{userlogged.name}}</h2>
+    <a (click)="cart()" class="cart-container">
+      <p *ngIf="shouldShowTotalQuantity()" class="total-quantity-container">{{ totalQuantity() }}</p>
+      <img class="carrito" src="assets/Cart.png" alt="Carrito de compras">
+    </a>
+
   </header>
 
   <!-- Contenido principal de la página -->
