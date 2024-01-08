@@ -8,7 +8,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { AppComponent } from '../../app/app.component';
 import { ProductService } from '../../Services/merch.service';
 
-
 declare var $: any;
 
 @Component({
@@ -19,13 +18,14 @@ declare var $: any;
 export class HomeComponent implements OnInit {
   userlogged: SocialUser = new SocialUser();
   isLogged: boolean = false;
-
+  isDarkMode = false;
   constructor(
     private authService: SocialAuthService,
     private router: Router,
     private dialog: MatDialog,
     private app: AppComponent,
     private productService: ProductService,
+
     @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
@@ -92,5 +92,7 @@ export class HomeComponent implements OnInit {
   cart(){
     this.app.onToggleCart();
   }
-
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+  }
 }

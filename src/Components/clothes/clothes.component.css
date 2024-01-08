@@ -41,28 +41,6 @@ h2 {
   font-weight: bold;
   color: #3498db;
 }
-
-/* Estilos para la descripción de los productos */
-.description {
-  margin-bottom: 10px;
-}
-
-/* Estilos para los botones de los productos */
-button {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 1em;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-/* Estilos para el botón en hover */
-button:hover {
-  background-color: #1215c06b;
-}
-
 /* Estilos para la imagen con ID ImgF en hover */
 #ImgF:hover {
   transform: scale(1.05); /* Aumenta el tamaño al 120% en hover */
@@ -89,7 +67,6 @@ h1 {
   display: flex;
   align-items: center; /* Alinea verticalmente el contenido del h1 */
 }
-
 
 
 /* Estilos para las imágenes de los productos */
@@ -132,3 +109,60 @@ header {
   align-items: center; /* Alinea verticalmente el contenido del header */
   justify-content: center; /* Alinea horizontalmente el contenido del header */
 }
+button {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  width: 14em;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+button:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+button:hover::before {
+  filter: blur(20px);
+}
+
+button:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+
+

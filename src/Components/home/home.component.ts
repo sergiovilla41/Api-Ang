@@ -9,6 +9,7 @@ import { ProductService } from '../../Services/merch.service';
 
 
 
+
 declare var $: any;
 
 @Component({
@@ -19,13 +20,15 @@ declare var $: any;
 export class HomeComponent implements OnInit {
   userlogged: SocialUser = new SocialUser();
   isLogged: boolean = false;
-
+  isDarkMode = false;
   constructor(
     private authService: SocialAuthService,
     private ruter: Router,
     private authGoogleService: AuthGoogleService,
     private app: AppComponent,
-    private productService: ProductService
+    private productService: ProductService,
+
+
 
   ){}
   cart(){
@@ -100,6 +103,9 @@ export class HomeComponent implements OnInit {
       window.location.href = '/Home';
       closePopupHandler(); // Cierra el overlay
     };
+  }
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
   }
 
 }

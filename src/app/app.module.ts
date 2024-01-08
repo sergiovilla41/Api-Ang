@@ -19,13 +19,17 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CartComponent } from '../Components/cart/cart.component';
 import { TreeModule } from 'primeng/tree';
-
+import { AuthServiceServiceUser } from '../Services/auth-service.service';
+import { FormsModule } from '@angular/forms';
+import { AddcomponentComponent } from '../Components/addcomponent/addcomponent.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle'
 @NgModule({
   declarations: [
-    AppComponent,CartComponent,LoginComponent,HomeComponent,ElectronicsComponent,ClothesComponent,JeweleryComponent ],
+    AppComponent,CartComponent,LoginComponent,HomeComponent,ElectronicsComponent,ClothesComponent,JeweleryComponent, AddcomponentComponent ],
   imports: [
     BrowserModule,
-    AppRoutingModule,HttpClientModule,CommonModule,OAuthModule.forRoot(),FontAwesomeModule,RouterModule.forRoot([]), BrowserAnimationsModule,SocialLoginModule,GoogleSigninButtonModule,GoogleSigninButtonModule,TreeModule
+    AppRoutingModule,HttpClientModule,CommonModule,OAuthModule.forRoot(),FontAwesomeModule,RouterModule.forRoot([]), BrowserAnimationsModule,SocialLoginModule,GoogleSigninButtonModule,GoogleSigninButtonModule,TreeModule,FormsModule,
+    MatSlideToggleModule
 
   ],
   providers: [
@@ -46,7 +50,7 @@ import { TreeModule } from 'primeng/tree';
     },
     provideClientHydration(),SocialLoginModule,
     AuthGoogleService,ProductService,HttpClient,HttpClientModule,provideHttpClient(),provideOAuthClient()
-    ,provideHttpClient(withFetch()),SocialAuthService
+    ,provideHttpClient(withFetch()),SocialAuthService,AuthServiceServiceUser,FormsModule
   ],
   bootstrap: [AppComponent]
 

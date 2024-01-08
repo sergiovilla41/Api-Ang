@@ -7,13 +7,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from '../Components/login/login.component';
 import { CartComponent } from '../Components/cart/cart.component';
+import { AddcomponentComponent } from '../Components/addcomponent/addcomponent.component';
 
 
 const routes: Routes = [
 
   {path: '', redirectTo:'Home', pathMatch: 'full'},
   {path: 'app', component:AppComponent},
-  {path: 'Home', component:HomeComponent},
+  {path: 'Home', component:AddcomponentComponent},
   {path: 'Clothes', component:ClothesComponent},
   {path: 'Jewelery', component:JeweleryComponent},
   {path: 'Electronics', component:ElectronicsComponent},

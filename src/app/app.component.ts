@@ -8,8 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   viewcart: boolean=false;
+  isDarkTheme: boolean = false;
 onToggleCart(){
 this.viewcart = !this.viewcart
+}
+onChange (newValue: boolean): void{
+  console.log(newValue);
 }
 
 }
