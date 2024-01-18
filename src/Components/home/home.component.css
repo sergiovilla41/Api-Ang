@@ -7,16 +7,6 @@ body {
 
 }
 
-/* Estilos del header */
-header {
-  background-color: #3498db;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-
-
-}
-
 /* Estilos del h1 y h2 */
 
 
@@ -42,7 +32,7 @@ h2 {
 /* Estilos del sucom */
 #sucom {
   color: #101111ea;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px;
 }
 
@@ -113,13 +103,6 @@ img#mas {
   z-index: -1;
 }
 
-
-
-/* Estilos del sucom en "nuevo" */
-#sucom {
-  font-size: 16px;
-}
-
 /* Estilos de la lista ordenada */
 ol {
   margin-top: 14px;
@@ -135,16 +118,6 @@ ol {
 .text {
   margin-top: 30px;
   color: #fff;
-}
-
-/* Estilos específicos del segundo body */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #9db385;
-  color: #333;
-  text-align: center;
 }
 
 /* Estilos para el encabezado principal */
@@ -303,67 +276,74 @@ li {
   padding: 10px;
   display: inline-block;
 }
+
 /* Estilo para el botón Sign Out */
 #signOutButton {
-  background-color: rgba(160, 29, 29, 0.781); /* Cambia el color de fondo a rojo */
+  background-color: rgba(160, 29, 29, 0.781);
+  /* Cambia el color de fondo a rojo */
   color: #fff;
   padding: 10px 20px;
   font-size: 1em;
-  border: 2px solid #922a2a; /* Cambia el color del borde a rojo */
+  border: 2px solid #922a2a;
+  /* Cambia el color del borde a rojo */
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 #signOutButton:hover {
-  background-color: #b85310c5; /* Cambia el color de fondo al pasar el ratón por encima */
-  border: 2px solid #e1e4238c; /* Cambia el color del borde al pasar el ratón por encima */
+  background-color: #b85310c5;
+  /* Cambia el color de fondo al pasar el ratón por encima */
+  border: 2px solid #e1e4238c;
+  /* Cambia el color del borde al pasar el ratón por encima */
 }
+
 .modal {
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);}
-  /* Estilos adicionales para apariencia y tamaño de la ventana */
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos adicionales para apariencia y tamaño de la ventana */
 
 
-  .user-info {
-    display: flex;
-    flex-direction: column; /* Change to column direction */
-    align-items: center;
-    margin-left: auto;
-    margin-right: 20px;
+.user-info {
+  display: flex;
+  flex-direction: column;
+  /* Change to column direction */
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.user-photo {
+  border-radius: 50%;
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+  /* Adjust other styles for the photo container as needed */
+}
+
+.user-name {
+  color: #e9eee7f6;
+  margin: 3px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.total-quantity-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #50c05473;
+  /* Fondo verde */
+  color: white;
+  /* Texto blanco */
+  padding: 4px 12px;
+  /* Ajusta el relleno según sea necesario */
+  border-radius: 30px;
+  /* Borde redondeado */
+  border: 1px solid #2da84cec;
   }
-
-  .user-photo {
-    border-radius: 50%;
-    margin: 3px;
-    width: 50px;
-    height: 50px;
-    /* Adjust other styles for the photo container as needed */
-  }
-
-  .user-name {
-    color: #e9eee7f6;
-    margin: 3px;
-    padding: 10px;
-    font-size: 14px;
-    font-family: 'Segoe UI';
-    /* Adjust other styles for the name as needed */
-  }
-  .total-quantity-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #50c05473; /* Fondo verde */
-    color: white; /* Texto blanco */
-    padding: 4px 12px; /* Ajusta el relleno según sea necesario */
-    border-radius: 30px; /* Borde redondeado */
-    border: 1px solid #2da84cec;
-    font-family: 'Segoe UI';
-
-  }
-
-/**/
-

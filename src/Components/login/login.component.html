@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <img id="Fondo" src="assets/Fondo.jpg" alt="">
   <div class="registro-container" *ngIf="!isLogged">
-    <img id="img" src="assets/Login/Login.png" class="imagen-pequeña">
+    <img id="img" src="assets/Login/Login.png" class="imagen-pequeña" alt="img">
     <h2>Ingreso de Usuario</h2>
     <form (ngSubmit)="onSubmit()" #registrationForm="ngForm">
       <label for="username">Usuario:</label>

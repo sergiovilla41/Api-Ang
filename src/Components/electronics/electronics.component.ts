@@ -20,7 +20,7 @@ export class ElectronicsComponent implements OnInit{
 
   addToCart(product:Product) {
     return this.productService.addProduct(product);
-    console.log();
+
   }
 
 }

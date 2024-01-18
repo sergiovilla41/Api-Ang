@@ -21,6 +21,5 @@ export class ClothesComponent implements OnInit {
 
   addToCart(product:Product) {
     return this.productService.addProduct(product);
-    console.log();
   }
 }
