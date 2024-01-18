@@ -9,6 +9,7 @@ section {
 
 /* Estilos para cada producto individual */
 .product {
+  transition: box-shadow 0.3s ease ;
   background-color: rgba(239, 245, 243, 0.603);
   border: 1px solid rgba(69, 176, 218, 0.329);
   border-radius: 5px;
@@ -17,7 +18,10 @@ section {
   text-align: center;
   width: 200px;
 }
+.product:hover{
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.616);
 
+}
 /* Estilos para las imágenes de los productos */
 img {
   max-width: 100%;

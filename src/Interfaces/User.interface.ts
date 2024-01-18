@@ -1,6 +1,5 @@
-export interface User {
+export interface RegistrationForm  {
   username: string;
   password: string;
-  firstName: string;
-  lastName: string;
+  confirmPassword: string;
 }
